@@ -1,6 +1,6 @@
 module todosbe
 
-// +heroku go 1.16
+// +heroku goVersion 1.16
 
 go 1.16
 
