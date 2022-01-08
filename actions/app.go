@@ -60,6 +60,9 @@ func App() *buffalo.App {
 		// Remove to disable this.
 		app.Use(popmw.Transaction(models.DB))
 		app.GET("/", HomeHandler)
+		app.GET("/todo/", TodoIndex)
+		app.GET("/todo/add", TodoAdd)
+		app.GET("/todo/{id}", TodoShow)
 	}
 
 	return app
