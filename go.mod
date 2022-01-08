@@ -1,8 +1,8 @@
 module todosbe
 
-// +heroku goVersion 1.12
+// +heroku go 1.12
 
-goVersion 1.12
+go 1.12
 
 require (
 	github.com/gobuffalo/buffalo v0.18.2
